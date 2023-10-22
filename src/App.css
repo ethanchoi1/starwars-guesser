@@ -1,8 +1,143 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(31, 28, 28);
+}
+
+/* App header styles */
+.App-header {
+  background-color: rgba(0, 0, 0, 0.816);
+  /* border: solid 10px red; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 15px 0 15px 15px;
+}
+
+/* Main app styles */
 .App {
+  /* border: solid 10px blue; */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
+.App-container {
+  /* border: solid 10px blue; */
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+
+.guess-counter {
+  color: white;
+  font-size: 40px;
+}
+
+/* Styles for main player textbox */
+.guess-input {
+  align-items: center;
+  /* border: solid 10px green; */
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.guess-textbox-label {
+  color: red;
+  font-size: 18px;
+}
+
+.guess-textbox {
+  background-color: rgb(89, 89, 89);
+  border: solid black 4px;
+  border-radius: 5px;
+  color:white;
+  font-size: 18px;
+  padding: 8px 8px;
+}
+
+.guess-textbox:focus {
+  background-color: rgb(63, 63, 63);
+  outline: none;
+}
+
+.guess-submit-button {
+  background-color: rgb(89, 89, 89);
+  border: solid 4px rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.guess-submit-button:hover {
+  cursor: pointer;
+}
+
+.guess-submit-button:active {
+  background-color: rgb(63, 63, 63);
+}
+
+/* Styles for previously-submitted guesses */
+.submitted-guesses-container {
+  /* border: solid red 10px; */
+  color: white;
+  font-size: 16px;
+  flex: 7;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  max-width: 860px;
+  width: 80%;
+}
+
+.submitted-guesses {
+  border: solid black 10px;
+  border-radius: 8px;
+}
+
+.submitted-guess {
+  align-items: stretch;
+  background-color: rgba(89, 89, 89, 0.536);
+  border: solid white 2px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submitted-guess-category {
+  align-items: center;
+  border-left: solid white 2px;
+  border-right: solid white 2px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 5px 4px 5px 4px;
+}
+
+.submitted-guess-category-wide {
+  flex: 2;
+}
+
+.correct-guess-category {
+  background-color: green;
+}
+
+.similar-guess-category {
+  background-color: rgba(255, 225, 0, 0.887);
+}
+
+@media only screen and (max-width: 580px) {
+  .submitted-guesses-container {
+    width: 100%;
+  }
+}
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,7 +146,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} 
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +171,4 @@
     transform: rotate(360deg);
   }
 }
+*/
